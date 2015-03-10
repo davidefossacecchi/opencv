@@ -7,6 +7,7 @@
 using namespace cv;
 
 int main(int argc, char** argv){
+	//create a window to handle the waitKey
 	namedWindow("Video", WINDOW_AUTOSIZE);
 	VideoCapture cap;
 	cap.open(0);
