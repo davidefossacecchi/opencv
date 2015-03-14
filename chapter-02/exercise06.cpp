@@ -8,6 +8,7 @@ using namespace cv;
 
 int main(int argc, char** argv){
 	Mat img = imread("rgb.png");
+	imshow("Original", img);
 	Mat channels[3];
 	split(img, channels);
 	imshow("Blue", channels[0]);
