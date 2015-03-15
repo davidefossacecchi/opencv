@@ -23,6 +23,10 @@ int main(int argc, char** argv){
 	Mat clone1 = channels[1].clone();
 	Mat clone2 = channels[1].clone();
 	
+	//point c
+	double minVal, maxVal;
+	minMaxLoc(channels[1], &minVal, &maxVal);
+	cout << "minimum: "<< minVal <<" maximum: "<< maxVal << endl;
 	
 	waitKey(0);
 }
