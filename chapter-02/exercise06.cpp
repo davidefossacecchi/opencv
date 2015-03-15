@@ -37,5 +37,9 @@ int main(int argc, char** argv){
 	compare(channels[1], clone1, clone2, CMP_GE);
 	imshow("result", clone2);
 	
+	//point f
+	channels[1] -= thresh/2;
+	imshow("last result", channels[1]);
+	
 	waitKey(0);
 }
