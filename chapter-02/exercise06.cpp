@@ -28,5 +28,9 @@ int main(int argc, char** argv){
 	minMaxLoc(channels[1], &minVal, &maxVal);
 	cout << "minimum: "<< minVal <<" maximum: "<< maxVal << endl;
 	
+	//point d
+	double thresh = (maxVal - minVal) / 2;
+	clone1.setTo(thresh);
+	
 	waitKey(0);
 }
