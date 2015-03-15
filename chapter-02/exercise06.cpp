@@ -9,7 +9,7 @@ using namespace cv;
 int main(int argc, char** argv){
 	Mat img = imread("rgb.png");
 	imshow("Original", img);
-	Mat channels[3];
+	Mat channels[3], result;
 	split(img, channels);
 	imshow("Blue", channels[0]);
 	imshow("Green", channels[1]);
