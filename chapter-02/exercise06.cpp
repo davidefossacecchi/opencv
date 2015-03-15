@@ -32,5 +32,10 @@ int main(int argc, char** argv){
 	double thresh = (maxVal - minVal) / 2;
 	clone1.setTo(thresh);
 	
+	//point e
+	clone2.setTo(0);
+	compare(channels[1], clone1, clone2, CMP_GE);
+	imshow("result", clone2);
+	
 	waitKey(0);
 }
